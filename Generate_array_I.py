@@ -1,7 +1,8 @@
-k=int(input())
-m=list(map(int,input().split()))
-n=[]
-for i in range(0,k,2):
-    for j in range(0,m[i+1]):
-        n.append(m[i])
-print(*n)
+n = int(input())
+arr = list(map(int,input().split()))
+res = []
+for i in range(0,n,2):
+    while arr[i+1]:
+        res.append(arr[i])
+        arr[i+1]-=1
+print(*res)
