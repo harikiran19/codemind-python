@@ -1,15 +1,16 @@
-def isprime(n):
-    if n==1:
-        return False
-    else:
-        for i in range(2,int(n**0.5)+1):
-            if n%i==0:
-                return False
-        return True
 n=int(input())
-l=list(map(int,input().split()))
-N=[]
-for i in l:
-    if isprime(i):
-        N.append(i)
-print("{:.2f}".format(sum(N)/len(N)))
+a=list(map(int,input().split()))
+b=[]
+c=0
+s=0
+for i in a:
+    if(i>1):
+        for j in range(2,i//2+1):
+            if(i%j==0):
+                break
+        else:
+            c+=1
+            b+=[i]
+for k in b:
+    s+=k
+print("%0.2f"%(s/c))
