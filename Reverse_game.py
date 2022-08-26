@@ -1,13 +1,13 @@
-def pali(i):
-    rev=0
-    temp=i
-    while temp>0:
-        r=temp%10
-        rev=rev*10+r
-        temp=temp//10
-    return rev    
-n=int(input())
-arr=list(map(int,input().split()))
+def rev(n):
+    r=0
+    while (n>0):
+        re=n%10
+        r=r*10+re
+        n//=10
+    return r
+    
 c=0
-for i in arr:
-      print(pali(i),end=' ')        
+n=int(input())
+lt=list(map(int,input().split()))
+for i in lt:
+    print(rev(i),end=' ')
