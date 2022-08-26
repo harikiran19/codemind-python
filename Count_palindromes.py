@@ -1,16 +1,12 @@
-def pali(i):
-    rev=0
-    temp=i
-    while temp>0:
-        r=temp%10
-        rev=rev*10+r
-        temp=temp//10
-    if i==rev:
+def prob(n):
+    st=str(n)
+    r=st[::-1]
+    if st==r:
         return True
-n=int(input())
-arr=list(map(int,input().split()))
 c=0
-for i in arr:
-    if(pali(i)):
+n=int(input())
+lt=list(map(int,input().split()))
+for i in lt:
+    if prob(i):
         c+=1
-print(c)        
+print(c)
