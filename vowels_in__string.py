@@ -1,8 +1,9 @@
-a=input()
-b=""
-for i in a:
-    if i in "aeiouAEIOU":
-        if i not in b:
-            b=b+i
-for j in b:
-    print(j,end=' ')
+s=input()
+v='aeiouAEIOU'
+c=0
+for i in sorted(set(s),key=s.index):
+    if i in v:
+        c+=1
+        print(i,end=' ')
+if c==0:
+    print('-1')
