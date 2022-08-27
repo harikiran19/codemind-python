@@ -1,6 +1,7 @@
-a=input()
-count=0
-for i in  a:
-    if i in "aeiouAEIOU":
-        count+=1
-print(count)
+s=input()
+v="aeiouAEIOU"
+c=0
+for i in range(len(s)):
+    if s[i] in v:
+        c+=1
+print(c)
