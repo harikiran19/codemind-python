@@ -1,6 +1,6 @@
-a=input()
-count=0
-for i in a:
+x = input()
+c=0
+for i in x:
     if i==' ':
-        count+=1
-print(count)
+        c+=1
+print(c)
