@@ -1,6 +1,6 @@
-a=input()
-count=0
-for i in a:
-    if(ord(i)>=97 and ord(i)<=122):
-        count+=1
-print(count)
+n=input()
+c=0
+for i in n:
+    if i.islower():
+        c+=1
+print(c)
