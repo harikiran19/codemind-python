@@ -1,6 +1,6 @@
-a=input()
-count=0
-for i in a:
-    if(ord(i)>=65 and ord(i)<=90):
-        count+=1
-print(count)
+n=input()
+c=0
+for i in n:
+    if i.isupper():
+        c+=1
+print(c)
